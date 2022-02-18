@@ -6,48 +6,34 @@
   background-color:#EDF2F4;
 }
 
-.todobox {
-  background-color: white;
-  width: calc(100% * 3 / 9);
-  min-height: 360px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.todotop form,
-.todoItem {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 16px;
-}
-
-#addbtn,
-#delbtn {
-  border: none;
-  border-radius: 8px;
-  padding: 8px 16px;
-  color: white;
-}
-#addbtn {
-  background-color: rgb(34, 155, 34);
-}
-
-#delbtn {
-  background-color: red;
-  font-size: 14px;
-  padding: 4px 8px;
-}
-
 div.content {
-  width: 450px;
-  height: 350px;
+  width: 40vw;
+  height: 70vh;
   background-color: #8d99ae;
   border: 1px solid #ccc;
   display: flex;
   justify-content: center;
 }
 
-.default-state-info {
-  width: 350px;
-  height: 10px;
+.button{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2d42 ;
+  position: absolute;
+  right: 10%;
+  bottom: 40;
+}
+
+.button button{
+  border: none;
+  background-color: transparent;
+}
+
+.button button svg{
+  width: 100%;
+  height: 100%;
 }
