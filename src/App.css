@@ -1,40 +1,53 @@
-.container{
+.container {
   height: 100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background-color: cyan;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color::#EDF2F4;
 }
 
-.todobox{
+.todobox {
   background-color: white;
-  width: calc(100% * 3/9);
-  min-height:  360px;
+  width: calc(100% * 3 / 9);
+  min-height: 360px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.todotop form, .todoItem{
+.todotop form,
+.todoItem {
   display: flex;
   justify-content: space-around;
   margin-bottom: 16px;
 }
 
-  
-#addbtn, #delbtn{
+#addbtn,
+#delbtn {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
   color: white;
 }
-#addbtn{
+#addbtn {
   background-color: rgb(34, 155, 34);
 }
 
-#delbtn{
+#delbtn {
   background-color: red;
   font-size: 14px;
   padding: 4px 8px;
+}
 
+div.content {
+  width: 450px;
+  height: 350px;
+  background-color: #8d99ae;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+}
+
+.default-state-info {
+  width: 350px;
+  height: 10px;
 }
