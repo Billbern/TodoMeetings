@@ -4,7 +4,20 @@ function App() {
   return (
     <div className="container">
       <div className="content">
-        <div className="default-state-info"></div>
+        {
+          meetings.length < 1 ?
+          <h1>
+            no meetings yet
+          </h1> :
+          meetings.map(item => {
+            return <div>item</div>
+          })
+        }
+      </div>
+      <div>
+        <button>
+          
+        </button>
       </div>
     </div>
   );
