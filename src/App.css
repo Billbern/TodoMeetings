@@ -1,0 +1,40 @@
+.container{
+  height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: cyan;
+
+}
+
+.todobox{
+  background-color: white;
+  width: calc(100% * 3/9);
+  min-height:  360px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.todotop form, .todoItem{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+  
+#addbtn, #delbtn{
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+}
+#addbtn{
+  background-color: rgb(34, 155, 34);
+}
+
+#delbtn{
+  background-color: red;
+  font-size: 14px;
+  padding: 4px 8px;
+
+}
