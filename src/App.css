@@ -13,6 +13,7 @@ div.content {
   border: 1px solid #ccc;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .button{
@@ -34,6 +35,22 @@ div.content {
 }
 
 .button button svg{
+  width: 100%;
+  height: 100%;
+}
+
+.content .meeting-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .meeting-item .meeting-img{
+  width: 24px;
+  height: 24px;
+}
+
+.meeting-item .meeting-img img{
   width: 100%;
   height: 100%;
 }

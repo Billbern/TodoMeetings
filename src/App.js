@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from 'axios';
 import "./App.css";
 
 function App() {
   const [meetings, setMeetings] = useState([]);
+
+  async function getData() {
+    const respData = await axios.get('http://localhost:8186/')
+    console.log(respData);
+    setMeetings(respData.data)
+  }
+
+  useEffect(async () => {
+     await getData();
+  }, [])
 
   return (
     <div className="container">
@@ -13,7 +24,15 @@ function App() {
             <h4>no meetings yet</h4>
           :
           meetings.map(item => {
-            return <div>item</div>
+            return <div className="meeting-item">
+              <span>{item.completed ? <input type="checkbox" checked/> : <input type="checkbox" />}</span>
+              <span className="meeting-img">
+                <img src={item.image} alt=""/>
+                </span>
+              <span>{item.name}</span>
+              <span>{item.time}</span>
+              
+            </div>
           })
         }
       </div>
