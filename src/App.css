@@ -17,16 +17,16 @@ div.content {
 }
 
 .button{
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   background-color: #2b2d42 ;
   position: absolute;
-  right: 10%;
-  bottom: 40;
+  right:440px ;
+  bottom: 120px;
 }
 
 .button button{
